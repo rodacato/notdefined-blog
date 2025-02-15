@@ -1,74 +1,52 @@
-# A statically generated blog example using Next.js, Markdown, and TypeScript
+# NotDefined.dev
 
-This is the existing [blog-starter](https://github.com/vercel/next.js/tree/canary/examples/blog-starter) plus TypeScript.
+**_"Not Defined, Always Growing."_** 🚀
 
-This example showcases Next.js's [Static Generation](https://nextjs.org/docs/app/building-your-application/routing/layouts-and-templates) feature using Markdown files as the data source.
+> Porque no todos los proyectos necesitan estar definidos desde el principio... o en absoluto.
 
-The blog posts are stored in `/_posts` as Markdown files with front matter support. Adding a new Markdown file in there will create a new blog post.
+---
 
-To create the blog posts we use [`remark`](https://github.com/remarkjs/remark) and [`remark-html`](https://github.com/remarkjs/remark-html) to convert the Markdown files into an HTML string, and then send it down as a prop to the page. The metadata of every post is handled by [`gray-matter`](https://github.com/jonschlinkert/gray-matter) and also sent in props to the page.
+## 🤔 ¿Qué es este sitio?
 
-## Demo
+**NotDefined.dev** es mi **laboratorio digital personal**, donde intento definir (sin mucho éxito) mi camino como developer. Una mezcla de:  
+🔹 **Portafolio** – Donde muestro lo que sé hacer… o al menos lo que funcionaba la última vez que revisé.  
+🔹 **Blog/Journal** – Reflexiones, errores épicos y cosas que sigo aprendiendo (o desaprendiendo).  
+🔹 **Showcase de Proyectos** – Algunas ideas bien pensadas, otras más *¿por qué no?*.
 
-[https://next-blog-starter.vercel.app/](https://next-blog-starter.vercel.app/)
+_Slogan:_ **"Not Defined, Always Growing."** Porque aquí nunca termina el `work in progress`.  
 
-## Deploy your own
+---
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/blog-starter)
+## 🚧 Secciones del Sitio  
+Nada está realmente terminado, pero por ahora tenemos:  
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/next.js/tree/canary/examples/blog-starter&project-name=blog-starter&repository-name=blog-starter)
+- **Acerca de Mí** → Una bio que parece sencilla… hasta que no lo es.  
+- **Blog/Journal** → Donde escribo sobre lo que aprendí o, más frecuentemente, lo que rompí.  
+- **Proyectos** → Showcase de experimentos: Algunos proyectos brillan, otros están en modo *"por definir"*.  
+- **Contacto** → Si después de leer todo esto aún quieres contactarme, el enlace está ahí.
 
-### Related examples
+---
 
-- [AgilityCMS](/examples/cms-agilitycms)
-- [Builder.io](/examples/cms-builder-io)
-- [ButterCMS](/examples/cms-buttercms)
-- [Contentful](/examples/cms-contentful)
-- [Cosmic](/examples/cms-cosmic)
-- [DatoCMS](/examples/cms-datocms)
-- [DotCMS](/examples/cms-dotcms)
-- [Drupal](/examples/cms-drupal)
-- [Enterspeed](/examples/cms-enterspeed)
-- [Ghost](/examples/cms-ghost)
-- [GraphCMS](/examples/cms-graphcms)
-- [Kontent.ai](/examples/cms-kontent-ai)
-- [MakeSwift](/examples/cms-makeswift)
-- [Payload](/examples/cms-payload)
-- [Plasmic](/examples/cms-plasmic)
-- [Prepr](/examples/cms-prepr)
-- [Prismic](/examples/cms-prismic)
-- [Sanity](/examples/cms-sanity)
-- [Sitecore XM Cloud](/examples/cms-sitecore-xmcloud)
-- [Sitefinity](/examples/cms-sitefinity)
-- [Storyblok](/examples/cms-storyblok)
-- [TakeShape](/examples/cms-takeshape)
-- [Tina](/examples/cms-tina)
-- [Umbraco](/examples/cms-umbraco)
-- [Umbraco heartcore](/examples/cms-umbraco-heartcore)
-- [Webiny](/examples/cms-webiny)
-- [WordPress](/examples/cms-wordpress)
-- [Blog Starter](/examples/blog-starter)
+## 🛠️ Tecnologías Usadas (más o menos...)  
+> Todo en este proyecto está sujeto a cambios, iteraciones, y ocasionales arrepentimientos.  
 
-## How to use
+- **Next.js** → Porque pensé: "¿Por qué no aprender SSR mientras hago esto?"  
+- **Tailwind CSS** → Más rápido que escribir CSS desde cero, pero aún no lo domino del todo.  
+- **Markdown** → Contenido sencillo y flexible… siempre y cuando recuerde las sintaxis.  
+- **Framer Motion** → Añadir animaciones es mi forma de decir "mira, sé hacer esto también".  
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+---
 
-```bash
-npx create-next-app --example blog-starter blog-starter-app
-```
+## 🌚 Modo Oscuro Garantizado  
+¿Por qué modo oscuro? Porque no solo es mejor para los ojos, también es mejor para mi alma de developer.
 
-```bash
-yarn create next-app --example blog-starter blog-starter-app
-```
+---
 
-```bash
-pnpm create next-app --example blog-starter blog-starter-app
-```
+## ⚠️ Disclaimer  
+No esperes perfección, solo evolución continua (o al menos eso intento).  
+Si encuentras un bug, guárdalo como souvenir, ya que es parte de la experiencia. 🎉  
 
-Your blog should be up and running on [http://localhost:3000](http://localhost:3000)! If it doesn't work, post on [GitHub discussions](https://github.com/vercel/next.js/discussions).
+---
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
-
-# Notes
-
-`blog-starter` uses [Tailwind CSS](https://tailwindcss.com) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3).
+**Bienvenidos a NotDefined.dev, donde nada está del todo definido... y eso está bien.**  
+Por ahora... seguimos aprendiendo, probando y redefiniendo.
