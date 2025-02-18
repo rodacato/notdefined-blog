@@ -9,9 +9,12 @@
   },
   "dependencies": {
     "classnames": "^2.5.1",
+    "commander": "^13.1.0",
     "date-fns": "^3.6.0",
+    "fs-extra": "^11.3.0",
     "gray-matter": "^4.0.3",
     "highlight.js": "^11.11.1",
+    "inquirer": "^12.4.2",
     "next": "15.1.7",
     "prismjs": "^1.29.0",
     "react": "^19.0.0",
