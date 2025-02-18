@@ -21,6 +21,7 @@ author:
   picture: "/assets/blog/authors/default.jpeg"
 ogImage:
   url: "/assets/blog/${slug}/cover.jpg"
+preview: true
 ---
 
 ## Introduction

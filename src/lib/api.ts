@@ -18,11 +18,13 @@ export function getPostBySlug (slug: string) {
   return { ...data, slug: realSlug, content } as Post
 }
 
-export function getAllPosts (): Post[] {
+export function getAllPosts ({ includePreview = false } = {}): Post[] {
   const slugs = getPostSlugs()
   const posts = slugs
     .map(slug => getPostBySlug(slug))
     // sort posts by date in descending order
     .sort((post1, post2) => (post1.date > post2.date ? -1 : 1))
+    .filter(post => includePreview || !post.preview)
+
   return posts
 }
