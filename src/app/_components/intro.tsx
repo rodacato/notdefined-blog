@@ -1,21 +1,38 @@
-import { CMS_NAME } from '@/lib/constants'
+'use client'
 
-export function Intro () {
+import { motion } from 'framer-motion'
+import { useState, useEffect } from 'react'
+
+export function Intro (): JSX.Element {
+  const [showCursor, setShowCursor] = useState<boolean>(true)
+
+  useEffect(() => {
+    const cursorInterval = setInterval(() => {
+      setShowCursor((prev) => !prev)
+    }, 500)
+    return () => clearInterval(cursorInterval)
+  }, [])
+
   return (
-    <section className='flex-col md:flex-row flex items-center md:justify-between mt-16 mb-16 md:mb-12'>
-      <h1 className='text-5xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8'>
-        Blog.
-      </h1>
-      <h4 className='text-center md:text-left text-lg mt-5 md:pl-8'>
-        A statically generated blog example using{' '}
-        <a
-          href='https://nextjs.org/'
-          className='underline hover:text-blue-600 duration-200 transition-colors'
-        >
-          Next.js
-        </a>{' '}
-        and {CMS_NAME}.
-      </h4>
+    <section className='flex flex-col md:flex-row items-center md:justify-between mt-16 mb-16 md:mb-12'>
+      <motion.h1
+        className='text-5xl md:text-7xl font-bold tracking-tight leading-tight md:pr-8 text-accent-green'
+        initial={{ opacity: 0, y: -10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: 'easeOut' }}
+      >
+        {'>'} NotDefined.dev
+        <span className={`text-gray-400 ${showCursor ? 'opacity-100' : 'opacity-0'}`}>|</span>
+      </motion.h1>
+
+      <motion.h4
+        className='text-center md:text-left text-lg mt-5 md:pl-8 text-text opacity-80'
+        initial={{ opacity: 0, x: 10 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1, ease: 'easeOut', delay: 0.3 }}
+      >
+        &quot;Undefined Insights: Creando sin límites.&quot;
+      </motion.h4>
     </section>
   )
 }
