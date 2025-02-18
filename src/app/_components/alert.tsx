@@ -9,21 +9,14 @@ const Alert = ({ preview }: Props) => {
   return (
     <div
       className={cn('border-b dark:bg-slate-800', {
-        'bg-neutral-800 border-neutral-800 text-white': preview,
+        'bg-amber-500 border-amber-600 text-white': preview,
         'bg-neutral-50 border-neutral-200': !preview
       })}
     >
       <Container>
         {preview && (
-          <div className='py-2 text-center text-sm'>
-            This page is a preview.{' '}
-            <a
-              href='/api/exit-preview'
-              className='underline hover:text-teal-300 duration-200 transition-colors'
-            >
-              Click here
-            </a>{' '}
-            to exit preview mode.
+          <div className='py-4 text-center text-base font-medium animate-pulse'>
+            ⚠️ Preview Mode Active: This is a draft version of the content and may not reflect the final published version.
           </div>
         )}
       </Container>
