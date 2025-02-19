@@ -8,6 +8,7 @@ author:
   picture: "/assets/blog/authors/adrian.jpeg"
 ogImage:
   url: "/assets/blog/ruby-parallelism-and-concurrency/cover.jpg"
+preview: false
 ---
 
 # Ruby y la Concurrencia: Threads, Fibers, Procesos y Ractors sin Mitos
