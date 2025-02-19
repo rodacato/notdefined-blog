@@ -8,6 +8,7 @@ author:
   picture: "/assets/blog/authors/adrian.jpeg"
 ogImage:
   url: "/assets/blog/ruby-blocks-lambdas-procs/cover.jpg"
+preview: false
 ---
 
 ## TL;DR

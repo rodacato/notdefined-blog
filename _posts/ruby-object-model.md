@@ -8,6 +8,7 @@ author:
   picture: "/assets/blog/authors/adrian.jpeg"
 ogImage:
   url: "/assets/blog/ruby-object-model/cover.jpg"
+preview: false
 ---
 
 ## TL;DR

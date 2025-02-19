@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 import { useState, useEffect } from 'react'
 
-export function Intro (): JSX.Element {
+export const Intro = () => {
   const [showCursor, setShowCursor] = useState<boolean>(true)
 
   useEffect(() => {
