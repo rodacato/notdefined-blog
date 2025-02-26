@@ -9,7 +9,7 @@ Este documento describe cómo mantener y actualizar NotDefined.dev. Como todo en
 Este script te ayuda a crear nuevos posts para el blog con la estructura y metadata correcta.
 
 ```
-node scripts/create-blog.js my-new-post -t "My New Blog Post" -a "John Doe"
+node scripts/create-blog.mjs my-new-post -t "My New Blog Post" -a "John Doe"
 ```
 
 Note: if not `-t` or `-a` provided it will be asked later on.
