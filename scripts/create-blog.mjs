@@ -36,7 +36,7 @@ program
   .action(async (slug, options) => {
     const postDir = path.join(POSTS_DIR, slug)
     const assetDir = path.join(ASSETS_DIR, slug)
-    const mdPath = path.join(postDir, 'index.md')
+    const mdPath = path.join(`${postDir}.md`)
 
     // Ask for missing options
     const answers = await inquirer.prompt([
@@ -58,7 +58,6 @@ program
     const author = options.author || answers.author
 
     // Ensure directories exist
-    await fs.ensureDir(postDir)
     await fs.ensureDir(assetDir)
 
     // Create Markdown file
